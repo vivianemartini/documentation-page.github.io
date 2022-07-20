@@ -10,15 +10,17 @@
 </head>
 <body>
     <nav id="navbar">
-        <header>
+        <header class="nav-logo">
             Git Docs
             <i class="fa-brands fa-git-alt"></i>
         </header>
-        <a class="nav-link" href="#Lets_get_started_it"></a>
-        <a class="nav-link" href=""></a>
-        <a class="nav-link" href=""></a>
-        <a class="nav-link" href=""></a>
-        <a class="nav-link" href=""></a> <!---suggestions can have more -->
+        <ul class="links">
+            <li><a class="nav-link" href="#Setup_and_Config">Set up and Config</a></li>
+            <li><a class="nav-link" href="#lets_get_started_it">Let's get started it</a></li>
+            <li><a class="nav-link" href="#everyday_git">Everyday Git</a></li>
+            <li><a class="nav-link" href="#basic_glossary">Basic Glossary</a></li>
+            <li> <a class="nav-link" href="#branches">Branches</a> <!---suggestions can have more --></li>
+        </ul>
     </nav>
 
     <!--On regular sized devices (laptops, desktops), the element with id="navbar" should be shown on the left side of the screen and should always be visible to the user
@@ -26,7 +28,7 @@
 
     <main id="main-doc">
         <section class="main-section">
-            <header>Setup and Config ⚙️</header>
+            <header id="Setup_and_Config" class="title">Setup and Config ⚙️</header>
             <p>First things first, go to <a href="https://git-scm.com/downloads" target="_blank">git page and download in your computer.</a></p>
             <p>Choose the default editor for Git and type</p>
             <code>$  git config</code>
@@ -40,7 +42,7 @@
         </section>
 
         <section class="main-section">
-            <header>Let's get started it 😎</header>
+            <header id="lets_get_started_it" class="title">Let's get started it 😎</header>
             <p>Initiate the repository</p>
             <p>This command you'll allow to start from scratch:</p>
             <code>$  git init</code>
@@ -61,7 +63,7 @@
     
         </section>
         <section class="main-section">
-            <header>Everyday Git 💻</header>
+            <header id="everyday_git" class="title">Everyday Git 💻</header>
             <p>When working in a company, or with other people, sometimes you have to "pull" updates that were made remotely into our local system, use this command:</p>
             <code>$ git pull</code>
             <p>Sometimes you need to add the name of the branch that you're pulling</p>
@@ -85,7 +87,7 @@
             <code>$ git push origin < branch name> </branch></code>
         </section>
         <section class="main-section">
-            <header>Basic Glossary 📓</header>
+            <header id="basic_glossary" class="title">Basic Glossary 📓</header>
             <code>$ git log</code>
             <p>Displays commit logs and allows you to see what changes were made, when, and by whom.</p>
 
@@ -103,15 +105,14 @@
             <code>$ git checkout</code>
             <p>Allows you to switch between branches.</p>
 
-            
             <code>$ git merge</code>
             <p>joins development histories together. In other words, it allows you to take changes from one branch and incorporate it into another branch.</p>
             
         </section>
         <section class="main-section">
-            <header>Branches 🌳</header>
+            <header id="branches" class="title">Branches 🌳</header>
             
-            <code>$ git branch/code>
+            <code>$ git branch</code>
             <p>Enables you to manage project branches. A branch is basically a separate version of your project, and ability to work with different branches is one of most powerful features of Git.</p>
     
             <li>To create a new branch, run:</li>
