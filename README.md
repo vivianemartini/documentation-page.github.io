@@ -1,6 +1,6 @@
 # freeCodeCamp
 
-You can check the work here: (in progress)
+You can check the work here: https://vivianemartini.github.io/documentation-page.github.io/
 
 # Responsive Web Design Projects
 This is a project for the Responsive Web Design Certification from freeCodeCamp.
@@ -45,4 +45,11 @@ User Story #14: On regular sized devices (laptops, desktops), the element with i
 
 User Story #15: Your technical documentation should use at least one media query
 
-# Test result (in progress)
+# Test result 
+
+<img width="942" alt="teste" src="https://user-images.githubusercontent.com/70038975/180242733-4d447674-9639-4192-af25-755b75e71a0e.PNG">
+
+# Improvements to be made
+
+* add more content
+* add media query
