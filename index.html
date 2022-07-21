@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/bab75d632b.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <title>freeCodeCamp - Documentation Page</title>
@@ -15,11 +18,11 @@
             <i class="fa-brands fa-git-alt"></i>
         </header>
         <ul class="links">
-            <li><a class="nav-link" href="#Setup_and_Config">Set up and Config</a></li>
-            <li><a class="nav-link" href="#lets_get_started_it">Let's get started it</a></li>
-            <li><a class="nav-link" href="#everyday_git">Everyday Git</a></li>
-            <li><a class="nav-link" href="#basic_glossary">Basic Glossary</a></li>
-            <li> <a class="nav-link" href="#branches">Branches</a> <!---suggestions can have more --></li>
+            <li><a class="nav-link" href="#Set_up_and_Config">Set up and Config</a></li>
+            <li><a class="nav-link" href="#How_to_start">How to start</a></li>
+            <li><a class="nav-link" href="#Everyday_Git">Everyday Git</a></li>
+            <li><a class="nav-link" href="#Basic_Glossary">Basic Glossary</a></li>
+            <li><a class="nav-link" href="#Branches">Branches</a> <!---suggestions can have more --></li>
         </ul>
     </nav>
 
@@ -27,111 +30,117 @@
     Your technical documentation should use at least one media query-->
 
     <main id="main-doc">
-        <section class="main-section">
-            <header id="Setup_and_Config" class="title">Setup and Config ⚙️</header>
-            <p>First things first, go to <a href="https://git-scm.com/downloads" target="_blank">git page and download in your computer.</a></p>
-            <p>Choose the default editor for Git and type</p>
-            <code>$  git config</code>
-             
-            <p>The first thing you should do when you install Git is to set your user name and email address. This is important because every Git commit uses this information, and it’s immutably baked into the commits you start creating</p>
-           
-            <code>$ git config --global user.name "John Doe"</code><br>
-            <code>$ git config --global user.email johndoe@example.com</code>
-
-            <li></li>
-        </section>
-
-        <section class="main-section">
-            <header id="lets_get_started_it" class="title">Let's get started it 😎</header>
-            <p>Initiate the repository</p>
-            <p>This command you'll allow to start from scratch:</p>
-            <code>$  git init</code>
-            <p>Now, you'd like to target an existing repository and create a clone, or copy of the target repository</p>
-            <code>$  git clone</code>
+        <section class="main-section" id="Set_up_and_Config">
+            <header class="title">Set up and Config</header>
+            <div class="text-container">
+                <p class="text">First things first, go to <strong class="git-link"><a href="https://git-scm.com/downloads" target="_blank">git page</a></strong> and download in your computer.</p>
+                <p class="text">Choose the default editor for Git and type</p>
+                <code>$  git config</code>
+                
+                <p class="text">The first thing you should do when you install Git is to set your user name and email address. This is important because every Git commit uses this information, and it’s immutably baked into the commits you start creating</p>
             
-            <p>Here's an example of how it should work:</p>
-            <code>
-                <p>$  git clone git@github.com:vivianemartini/documentation-page.github.io.git</p>
-                <p>$  cd documentation-page.github.io.git</p>
-                <p>$  # Start working on the project</p>
-            </code>
-
-            <p>With <code>git clone</code> you can:</p>
-            <li>Clone to a specific folder</li>
-            <li>Clone a specific tag</li>
-            <li>Shallow clone</li>
-    
+                <code>$ git config --global user.name "John Doe"</code>
+                <code>$ git config --global user.email johndoe@example.com</code>
+            </div>
         </section>
-        <section class="main-section">
-            <header id="everyday_git" class="title">Everyday Git 💻</header>
-            <p>When working in a company, or with other people, sometimes you have to "pull" updates that were made remotely into our local system, use this command:</p>
-            <code>$ git pull</code>
-            <p>Sometimes you need to add the name of the branch that you're pulling</p>
-            <code>$ git pull < branch name > </branch></code>
 
-            <code>$ git status</code>
-            <li>The status shows, well, the status of your working tree. Specifically, you’ll be able to see your current branch, tracked and untracked files, as well as staged and unstaged changes.</li>
+        <section class="main-section" id="How_to_start">
+            <header class="title">How to start</header>
+            <div class="text-container">
+                <p class="text">Initiate the repository</p>
+                <p class="text">This command you'll allow to start from scratch:</p>
+                <code>$  git init</code>
+                <p class="text">Now, you'd like to target an existing repository and create a clone, or copy of the target repository</p>
+                <code>$  git clone</code>
+                
+                <p class="text">Here's an example of how it should work:</p>
+                <code>
+                    <p>$  git clone git@github.com:vivianemartini/documentation-page.github.io.git</p>
+                    <p>$  cd documentation-page.github.io.git</p>
+                    <p>$  # Start working on the project</p>
+                </code>
+
+                <p class="text">With <strong>git clone</strong> you can:</p>
+                <li>Clone to a specific folder</li>
+                <li>Clone a specific tag</li>
+                <li>Shallow clone</li>
+            </div>
+        </section>
+        <section class="main-section" id="Everyday_Git">
+            <header  class="title">Everyday Git</header>
+            <div class="text-container">
+                <p class="text">When working in a company, or with other people, sometimes you have to "pull" updates that were made remotely into our local system, use this command:</p>
+                <code>$ git pull</code>
+                <p class="text">Sometimes you need to add the name of the branch that you're pulling</p>
+                <code>$ git pull < branch name ></code>
+
+                <code>$ git status</code>
+                <li>The status shows, well, the status of your working tree. Specifically, you’ll be able to see your current branch, tracked and untracked files, as well as staged and unstaged changes.</li>
+                
+                <code>$ git add</code>
+                <li>Is probably one of the most common Git commands. So, what operation does it perform? Basically, it updates the index with the content found in your working tree thus making the content staged for the next commit. An index is like a snapshot of your working tree. When you perform a commit, this snapshot is utilized. Therefore, before doing a commit you should perform git add for any files that were modified or created.</li>
+                <li>This dot . means “take all the files in the working tree” and add them to the index.</li>
+
+                <code>$ git commit</code>
+                <li>Is one of the most important Git commands as it records the changes to the repository based on the current index.</li>
+                <p class="text">To perform a new commit and add a small informational message for it, run:</p>
+                <code>$ git commit -m "My first commit"</code>
+
+                <code>$ git push</code>
+                <li>Allows you to send local changes to the remote repository which is usually hosted on services like GitHub, Bitbucket, GitLab, or Azure DevOps repos.</li>
+                <p class="text">When the remote repository is provided, you can push your local changes:</p>
+                <code>$ git push origin < branch name> </code>
+            </div>    
+            </section>
+        <section class="main-section" id="Basic_Glossary" >
+            <header class="title">Basic Glossary</header>
+            <div class="text-container">
+                <code>$ git log</code>
+                <p class="text">Displays commit logs and allows you to see what changes were made, when, and by whom.</p>
+
+                <p class="text">For each commit you can see: </p>
+                <li>Its checksum (that long alphanumeric string)</li>
+                <li>Author</li>
+                <li>Date</li>
+                <li>Commit message</li>
+                <li>The HEAD -> master means that the commit was performed on the master branch and this is the current version that we’re browsing at the moment</li>
+                <li>develop means that the commit was performed on the develop branch</li>
+
+                <code>$ git stash</code>
+                <p class="text">Command saves all your modifications since the last commit, stores them away and returns to a clean working directory. In other words, if you have performed some modifications since the last commit but then decided that these modifications are not relevant anymore.</p>
             
-            <code>$ git add</code>
-            <li>Is probably one of the most common Git commands. So, what operation does it perform? Basically, it updates the index with the content found in your working tree thus making the content staged for the next commit. An index is like a snapshot of your working tree. When you perform a commit, this snapshot is utilized. Therefore, before doing a commit you should perform git add for any files that were modified or created.</li>
-            <li>This dot . means “take all the files in the working tree” and add them to the index.</li>
+                <code>$ git checkout</code>
+                <p class="text">Allows you to switch between branches.</p>
 
-            <code>$git commit</code>
-            <li>Is one of the most important Git commands as it records the changes to the repository based on the current index.</li>
-            <p>To perform a new commit and add a small informational message for it, run:</p>
-            <code>$ git commit -m "My first commit"</code>
-
-            <code>$git push</code>
-            <li>Allows you to send local changes to the remote repository which is usually hosted on services like GitHub, Bitbucket, GitLab, or Azure DevOps repos.</li>
-            <p>When the remote repository is provided, you can push your local changes:</p>
-            <code>$ git push origin < branch name> </branch></code>
+                <code>$ git merge</code>
+                <p class="text">Joins development histories together. In other words, it allows you to take changes from one branch and incorporate it into another branch.</p>
+            </div>
         </section>
-        <section class="main-section">
-            <header id="basic_glossary" class="title">Basic Glossary 📓</header>
-            <code>$ git log</code>
-            <p>Displays commit logs and allows you to see what changes were made, when, and by whom.</p>
-
-            <p>For each commit you can see: </p>
-            <li>Its checksum (that long alphanumeric string)</li>
-            <li>Author</li>
-            <li>Date</li>
-            <li>Commit message</li>
-            <li>The HEAD -> master means that the commit was performed on the master branch and this is the current version that we’re browsing at the moment</li>
-            <li>develop means that the commit was performed on the develop branch</li>
-
-            <code>$ git stash</code>
-            <p>Command saves all your modifications since the last commit, stores them away and returns to a clean working directory. In other words, if you have performed some modifications since the last commit but then decided that these modifications are not relevant anymore.</p>
+        <section class="main-section" id="Branches">
+            <header class="title">Branches</header>
+            <div class="text-container">
+                <p class="text">When you type:</p>
+                <code>$ git branch</code>
+                <p class="text">It enables you to manage project branches. A branch is basically a separate version of your project, and ability to work with different branches is one of most powerful features of Git.</p>
         
-            <code>$ git checkout</code>
-            <p>Allows you to switch between branches.</p>
-
-            <code>$ git merge</code>
-            <p>joins development histories together. In other words, it allows you to take changes from one branch and incorporate it into another branch.</p>
-            
-        </section>
-        <section class="main-section">
-            <header id="branches" class="title">Branches 🌳</header>
-            
-            <code>$ git branch</code>
-            <p>Enables you to manage project branches. A branch is basically a separate version of your project, and ability to work with different branches is one of most powerful features of Git.</p>
-    
-            <li>To create a new branch, run:</li>
-            <code>$ git branch YOUR_BRANCH_NAME</code>
-            <li>To rename a local branch, run:</li>
-            <code>$git branch -m OLD_NAME NEW_NAME</code>
-            <li>Alternatively, you can rename the current branch by running:</li>
-            <code>git branch -m NEW_NAME</code>
-            <li>To delete a local branch, run:</li>
-            <code>$ git branch -d BRANCH_NAME</code>
+                <li>To create a new branch, run:</li>
+                <code>$ git branch YOUR_BRANCH_NAME</code>
+                <li>To rename a local branch, run:</li>
+                <code>$ git branch -m OLD_NAME NEW_NAME</code>
+                <li>Alternatively, you can rename the current branch by running:</li>
+                <code>git branch -m NEW_NAME</code>
+                <li>To delete a local branch, run:</li>
+                <code>$ git branch -d BRANCH_NAME</code>
+             </div>       
         </section>
 
       
     </main>
 
     <footer>
-        <!-- <p><a href="https://github.com/vivianemartini"  target="_blank" class="copyright">2022 - Developed by Viviane Martini</a></p>-->
+         <p><a href="https://github.com/vivianemartini"  target="_blank" class="copyright">2022 - Developed by Viviane Martini</a></p>
     </footer>
-    <!--<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>-->
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     
 </body>
 </html>
