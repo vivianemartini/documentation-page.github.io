@@ -1,19 +1,19 @@
-# freeCodeCamp
+## freeCodeCamp
 
 You can check the work here: https://vivianemartini.github.io/documentation-page.github.io/
 
-# Responsive Web Design Projects
+## Responsive Web Design Projects
 This is a project for the Responsive Web Design Certification from freeCodeCamp.
 
 By working on this project, I got the chance to apply all of the skills, principles, and concepts I have learned so far: HTML, CSS, Visual Design, Accessibility, and more.
 
 Build a Technical Documentation Page
 
-# Challenge
+## Challenge
 
 Objective: Build an app that is functionally similar to https://technical-documentation-page.freecodecamp.rocks
 
-# Rules
+## Rules
 
 User Story #1:  You can see a main element with a corresponding id="main-doc", which contains the page's main content (technical documentation)
 
@@ -49,7 +49,13 @@ User Story #15: Your technical documentation should use at least one media query
 
 <img width="942" alt="teste" src="https://user-images.githubusercontent.com/70038975/180242733-4d447674-9639-4192-af25-755b75e71a0e.PNG">
 
-# Improvements to be made
+## Improvements to be made
 
 * add more content
 * add media query
+
+## License
+This project is licensed under the MIT License - see the LICENSE.md file for details
+
+## Acknowledgments
+- Thanks freeCodeCamp
